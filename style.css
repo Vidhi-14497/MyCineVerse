@@ -1,0 +1,318 @@
+html,  body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    
+    
+}
+
+#page1{
+    height: 100vh;
+    background-image: url("./assets/world-gif.gif");
+        background-repeat: no-repeat;
+        
+        background-size: 100% 100%;
+        background-position: center;  
+        
+    
+}
+
+/* .page{
+    overflow-y: auto; }
+    */
+
+.main-text{
+    display: flex;
+    margin-top: 450px;
+    font-family: "Rubik Glitch", system-ui;
+    justify-content: center; 
+    /* width: 100%;
+    height: 100%; */
+    font-size:6rem;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 0;
+    z-index: 1;
+  
+}
+
+.main-box{
+    height: 80%;
+    width: 100%;
+   
+}
+
+/* .background{
+    height: 500px;
+    margin-right: 7%;
+    padding-left: 10%;
+    z-index: 0;
+    
+} */
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.my-navbar {
+    background-color: rgba(255, 255, 255, 0.027);
+    backdrop-filter: blur(2px);
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 1px solid rgba(255, 255, 255, 0.61);
+    position: relative;
+    top: 10px;
+    display: flex;
+
+    box-shadow: 3px 3px 3px rgba(19, 129, 255, 0.178);
+}
+
+.menu__container {
+    display: flex;
+    width: 90%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 5PX;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transform-origin: center right 0px;
+    transition: all 0.5s ease-out;
+    
+}
+
+
+.menu__container ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* even spacing between links */
+    margin-right: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.menu__container .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+}
+
+.menu__container .menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    transition: all 0.1s linear;
+}
+
+.menu__container li {
+    width: 125px;
+    height: 50px;
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+
+    a {
+        font-size: 22px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: all 0.45s;
+    }
+
+    &:hover {
+        background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+        animation: line 1.5s;
+    }
+
+    &:hover a {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: hsl(0, 0%, 100%);
+    }
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+@keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
+}
+
+#page2 {
+position: relative;
+    min-height: 100vh;
+    padding-top: 150px;
+     overflow: hidden;
+     background-color: #000000;
+    background-image: url('./assets/p2-bg.png');
+    /* background-image: url('./assets/magical\ runes.jpg'); */
+    /* background-image: url(./assets/arcane-city.jpg); */
+    /* background-image: url(./assets/arcane-hexcore.webp);
+    background-color: #002134;
+    background-position: 600px 400px; */
+    background-size: cover;
+    /* background-image: url(./assets/bg-arcane4.webp); */
+    /* background-repeat: no-repeat; */
+    
+  }   
+
+ 
+
+#page2 .core,
+#page2 .node {
+    position: absolute;
+    
+    
+} 
+
+/* Core Hub */
+ .core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    /* background: radial-gradient(circle, #7f55cf 0%, #3e0a92 100%); */
+       
+        background-image: url('./assets/arcane-hex.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 10;
+    
+} 
+
+/* Floating Nodes */
+ .node {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    z-index: 5;
+    animation: float 6s ease-in-out infinite alternate;
+    background: radial-gradient(circle, #323862 0%, #829cff 100%);
+        box-shadow:
+            0 0 15px rgba(139, 122, 193, 0.4),
+            0 0 35px rgba(21, 219, 240, 0.2);
+}
+
+.node span {
+    font-size: 25px;
+    margin-top: 5px;
+    color: rgb(159, 218, 255);
+}
+
+.node:hover {
+    
+    box-shadow: 0 0 20px rgba(111, 66, 255, 0.5);
+} 
+
+/* Hover Glow & Scale */
+ .node:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(154, 131, 227, 0.5);
+} 
+
+/* Individual Node Positions */
+ .node-gallery {
+    top: 20%;
+    left: 25%;
+    animation-delay: 0s;
+}
+
+.node-scenes {
+    top: 25%;
+    right: 20%;
+    animation-delay: 1s;
+}
+
+.node-quiz {
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 0.5s;
+}
+
+.node-mood {
+    bottom: 25%;
+    right: 25%;
+    animation-delay: 1.5s;
+}
+
+.node .emoji {
+    opacity: 1;
+    font-size: 45px;
+    display: inline-block;
+}
+
+.node span {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.node:hover span {
+    opacity: 1;
+} 
+
+/* Floating Animation */
+ @keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(6px, -8px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+}
+
+.core {
+    animation: pulse 3s ease-in-out infinite;
+} 
+
+.footer{
+    background-color: #848fdf;
+}

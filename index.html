@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyVerse</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nosifer&family=Press+Start+2P&family=Rubik+Glitch&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- bootstrap link -->
+  </head>
+
+  <body>
+    <div class="">
+      <div class="page homepage" id="page1">
+        <nav class="my-navbar menu__container">
+          <img src="./assets/Game asset.gif" />
+          <ul>
+            <li><a href="./pages/gallery.html">Gallery</a></li>
+            <li><a href="./pages/scenes.html">Scenes</a></li>
+            <li><a href="./pages/quiz.html">Quiz</a></li>
+            <!-- <li><a href="./pages/moodboard.html">MoodBoard</a></li> -->
+          </ul>
+          <!-- <img src="./assets/Game asset.gif" /> -->
+        </nav>
+        <div class="main-box container">
+          <h1 class="main-text">Welcome to My CineVerse</h1>
+        </div>
+      </div>
+
+      <div class="page second-page" id="page2">
+        <!-- Core Hub -->
+
+        <div class="core"></div>
+
+        <!-- Floating Nodes -->
+        <div class="node node-gallery" data-target="/pages/gallery.html">
+          <span class="emoji">🎭</span><span>Gallery</span>
+        </div>
+        <div class="node node-scenes" data-target="/pages/scenes.html">
+          <span class="emoji">🎬</span> <span>Scenes</span>
+        </div>
+        <div class="node node-quiz" data-target="/pages/quiz.html">
+          <span class="emoji">❓</span><span>Quiz</span>
+        </div>
+        <!-- <div class="node node-mood" data-target="/pages/moodboard.html">
+          <span class="emoji"> 🧩</span><span>Moodboard</span>
+        </div> -->
+      </div>
+
+      <footer
+        class="footer d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            aria-label="Bootstrap"
+          >
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">@ Made by Vidhi</span>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <!-- bootstrap link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
