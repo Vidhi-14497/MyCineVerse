@@ -180,7 +180,7 @@ position: relative;
     
 } 
 
-/* Core Hub */
+
  .core {
     position: absolute;
     top: 50%;
@@ -203,7 +203,7 @@ position: relative;
     
 } 
 
-/* Floating Nodes */
+
  .node {
     position: absolute;
     width: 150px;
@@ -236,13 +236,13 @@ position: relative;
     box-shadow: 0 0 20px rgba(111, 66, 255, 0.5);
 } 
 
-/* Hover Glow & Scale */
+
  .node:hover {
     transform: scale(1.15);
     box-shadow: 0 0 20px rgba(154, 131, 227, 0.5);
 } 
 
-/* Individual Node Positions */
+
  .node-gallery {
     top: 20%;
     left: 25%;
@@ -282,7 +282,7 @@ position: relative;
     opacity: 1;
 } 
 
-/* Floating Animation */
+
  @keyframes float {
     0% {
         transform: translate(0, 0);
