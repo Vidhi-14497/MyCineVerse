@@ -1,6 +1,4 @@
- // -------------------------------------
-      // SIMPLE DATA
-      // -------------------------------------
+
       const scenes = [
         {
           src: "../assets/scenes/stranger-things.mp4",
@@ -23,7 +21,7 @@
       let score = 0;
       let hintIndex = 0;
 
-      // HTML Elements
+   
       const videoEl = document.getElementById("sceneVideo");
       const answerEl = document.getElementById("answerInput");
       const scoreEl = document.getElementById("scoreText");
@@ -78,16 +76,13 @@
     `;
       }
 
-      // Event Listeners
       document
         .getElementById("submitBtn")
         .addEventListener("click", checkAnswer);
       document.getElementById("hintBtn").addEventListener("click", showHint);
 
-      // Enter Key = Submit
       answerEl.addEventListener("keydown", (e) => {
         if (e.key === "Enter") checkAnswer();
       });
 
-      // Load first scene
       loadScene();
